@@ -6,6 +6,7 @@ of('Alice', 'Ben', 'Charlie').subscribe({
   complete: () => console.log('Completed'),
 });
 
+//the above implementation is the same as follows:
 const names$ = new Observable<string>((subscriber) => {
   subscriber.next('Alice');
   subscriber.next('Ben');
